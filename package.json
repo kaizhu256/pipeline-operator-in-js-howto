@@ -4,6 +4,7 @@
   "description": "",
   "main": "pipe.js",
   "scripts": {
+    "build": "babel pipe.js -d out --source-maps",
     "start": "babel pipe.js | node",
     "eslint": "eslint -f json pipe.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,9 +12,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "scripts": {
-    "build": "babel pipe.js -d out --source-maps"
-  },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
